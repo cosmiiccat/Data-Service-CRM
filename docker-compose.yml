@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:  
+    build: .
+    command: bash -c "python3 manage.py runserver"
+    container_name: atlan-data
+    volumes:
+      - .:/atlan-data
+    ports:
+      - "8000:8000"

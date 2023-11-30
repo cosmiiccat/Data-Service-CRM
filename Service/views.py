@@ -3,7 +3,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render, HttpResponse
 from django.http import JsonResponse
 from . import utils
-from trigger import trigger 
+from .trigger import trigger 
 import json
 from .models import (
     user_model,
