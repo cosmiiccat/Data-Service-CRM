@@ -285,7 +285,7 @@ def get_responses(request):
             if key not in req_data.keys():
                 raise utils.CustomError(f"The parameter {key} is missing")
 
-        responses = list(MongoClient.find({"type": "responses", "query-id": req_data['query_id']}))
+        responses = list(MongoClient.find({"type": "response", "query-id": req_data['query_id']}))
         
         return JsonResponse({"success":"true", "forms": str(responses)})
     

@@ -64,7 +64,7 @@ def query_model(query, form_id, mandatory):
 def response_model(response, query_id, customer_id):
     response = {
             'id': str(uuid.uuid4()),
-            'type': 'query',
+            'type': 'response',
             'query-id': query_id,
             'customer-id': customer_id,
             'response': response,
