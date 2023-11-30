@@ -4,8 +4,10 @@ from twilio.rest import Client
 
 from . import MongoClient
 
-TWILIO_ACCOUNT_SID = "AC798f77c5bd10d4f7b70c7d6c374eff3a"
-TWILIO_AUTH_TOKEN = "07a544ff59dd346de0ae7e9c09143ca7"
+from ..Controller import (
+    TWILIO_ACCOUNT_SID,
+    TWILIO_AUTH_TOKEN
+)
 
 def sms_message(text, customer_number):
     account_sid = TWILIO_ACCOUNT_SID
